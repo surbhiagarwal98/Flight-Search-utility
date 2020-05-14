@@ -1,0 +1,18 @@
+package com.nagarro.dao.api;
+
+import com.nagarro.model.User;
+
+/**
+ * this interface gets user and password reset interacting with database
+ * 
+ * @author surbhiagarwal
+ *
+ */
+public interface UserDao {
+
+	boolean resetPassword(String username, String newPassword);
+
+	User getUser(String username);
+
+	boolean isUser(String username, String password);
+}
